@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "/workspaces/daily-reflection-journal/daily-reflection-journal/lib/subabaseClient";
+import { supabase } from "/workspaces/daily-reflection-journal/lib/supabaseClient";
 import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
