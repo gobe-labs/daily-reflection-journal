@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "/workspaces/daily-reflection-journal/daily-reflection-journal/lib/subabaseClient";
+import { supabase } from "@/lib/supabaseClient";
 
 const MOODS = [
   { value: 1, emoji: "😞", label: "Rough" },
