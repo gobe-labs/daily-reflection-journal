@@ -27,8 +27,10 @@ export default function LoginPage() {
       if (error) throw error;
 
       router.push("/today");
-    } catch (err: any) {
-      setError(err.message ?? "Something went wrong");
+    } catch (err: unknown) {
+    const message =
+    err instanceof Error ? err.message : "Something went wrong";
+    setError(message);
     } finally {
       setLoading(false);
     }
